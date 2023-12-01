@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateItemActivity">
+
+
+    <ImageButton
+        android:id="@+id/BackPage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Item"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <LinearLayout
+        android:id="@+id/InputNameItemBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308">
+
+        <TextView
+            android:id="@+id/LabelNameItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Item"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <EditText
+            android:id="@+id/InputNameItem"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="269dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446">
+
+        <TextView
+            android:id="@+id/LabelCalorieItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalori Item"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="355dp" />
+
+        <EditText
+            android:id="@+id/InputTotalCalorie"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:text=""
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="387dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Item (1 input saja)"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="484dp" />
+
+        <CheckBox
+            android:id="@+id/InputTypeItem1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Makanan"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="516dp" />
+
+        <CheckBox
+            android:id="@+id/InputTypeItem2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Minuman"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="564dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759">
+
+        <TextView
+            android:id="@+id/labelSpecificItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berat/Volume"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="237dp"
+            tools:layout_editor_absoluteY="434dp" />
+
+        <EditText
+            android:id="@+id/InputSpecificContentItem"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:text=""
+            tools:layout_editor_absoluteX="237dp"
+            tools:layout_editor_absoluteY="466dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.950" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
